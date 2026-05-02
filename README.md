@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏗️ Moloy Krishna Paul — Industrial BWY Portfolio
 
-## Getting Started
+A high-performance, strictly minimalist, and industrial-themed developer portfolio. Built with a focus on high-contrast design, sharp UI elements, and seamless theme inversion.
 
-First, run the development server:
+![Logo](/public/logo.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🎨 Aesthetic: Black, White & Yellow (BWY)
+
+This portfolio follows a strict **"Industrial Magazine"** aesthetic:
+- **Sharp Corners:** 0px border-radius across all containers, buttons, and sections.
+- **Perfect Inversion:** Light and Dark modes are literal inverses of each other—pure black vs. pure white.
+- **High Contrast:** Bold typography and yellow highlights (`#FFFF00`) for interactive elements.
+
+## 🚀 Key Features
+
+- **🌓 Dynamic Theme Inversion:** Seamlessly switch between Light and Dark modes with persistent state.
+- **✨ Big Bang Text Animation:** A custom particle-based text explosion animation for the hero section.
+- **📊 Real-time GitHub Stats:** Fetches repository counts, experience years, and contribution data directly from the GitHub API.
+- **🖱️ Custom Cursor:** A theme-aware interactive cursor that reacts to links and buttons.
+- **📱 Fully Responsive:** Optimized for all screen sizes, from mobile to ultra-wide displays.
+- **⚡ Performance Optimized:** Built with Next.js 15, utilizing Font Optimization, Image Optimization, and API Caching.
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js 15+](https://nextjs.org/) (App Router)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Deployment:** [Vercel](https://vercel.com/)
+
+## 📦 Getting Started
+
+### Prerequisites
+- Node.js 18.x or later
+- npm / yarn / pnpm
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/iMoloy/moloy.is-a.dev.git
+   cd moloy.is-a.dev
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## 📂 Project Structure
+
+```text
+├── src/
+│   ├── app/            # Next.js App Router (Layouts, Pages, APIs)
+│   ├── components/     # Reusable UI Components (Hero, Navbar, etc.)
+│   ├── data/           # Portfolio Content (portfolio.js)
+│   └── hooks/          # Custom React Hooks
+├── public/             # Static Assets (Images, Icons, PDFs)
+└── next.config.mjs     # Next.js Configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📄 License
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+This project is open-source and available under the [MIT License](LICENSE).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Developed with 💛 by [Moloy Krishna Paul](https://moloy.is-a.dev)
