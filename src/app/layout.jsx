@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import StarBackground from "@/components/StarBackground";
+import CustomCursor from "@/components/CustomCursor";
 import "./globals.css";
 
 
@@ -55,6 +56,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth dark" suppressHydrationWarning>
       <body className={`${poppins.variable} font-sans transition-colors duration-300`}>
         <ThemeProvider>
+          <CustomCursor />
           <StarBackground />
           {children}
         </ThemeProvider>
