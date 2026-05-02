@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", sans-serif;
+  
+  --color-background: var(--bg-main);
+  --color-card: var(--bg-card);
+  --color-nav: var(--bg-nav);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-bg: var(--accent-bg);
+  --color-border-main: var(--border-main);
+}
+
+:root {
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-nav: rgba(255, 255, 255, 0.85);
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --accent-bg: rgba(79, 70, 229, 0.1);
+  --border-main: rgba(0, 0, 0, 0.1);
+  --selection-bg: #4f46e5;
+  --selection-text: #ffffff;
+}
+
+.dark {
+  --bg-main: #000000;
+  --bg-card: #0a0a0a;
+  --bg-nav: rgba(0, 0, 0, 0.85);
+  --text-main: #ffffff;
+  --text-muted: #a1a1aa;
+  --accent: #ccff00;
+  --accent-hover: #e4ff4d;
+  --accent-bg: rgba(204, 255, 0, 0.1);
+  --border-main: rgba(255, 255, 255, 0.1);
+  --selection-bg: #ccff00;
+  --selection-text: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background-color: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
