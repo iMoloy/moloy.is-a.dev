@@ -15,9 +15,9 @@ export const profile = {
 };
 
 export const about = [
-  `Hi, you can call me <a class="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 transition-colors" href="https://www.facebook.com/iMoloy/" target="_blank" rel="noreferrer noopener">Moy</a>. A full stack web developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.`,
-  `I have experience with both front-end and back-end development, including React, Node.js, Express.js, and MongoDB. I'm also experienced in QA engineering and web application testing, with a strong familiarity with Linux environments and Git-based workflows.`,
-  `In my spare time, I'm usually reading manga, gaming, or learning new languages.`,
+  `I am a passionate <span class="text-yellow-400 font-black">Full Stack Web Developer</span> specializing in the <span class="bg-yellow-400 text-black px-1 dark:bg-transparent dark:text-text-main font-bold underline decoration-yellow-400">MERN Stack</span>. My focus is on crafting high-performance, pixel-perfect user interfaces that seamlessly blend aesthetic design with robust, scalable engineering. I don't just write code; I build digital experiences that are optimized for speed, accessibility, and growth.`,
+  `With a strong foundation in <span class="text-yellow-400 font-black">React, Node.js, Express, and MongoDB</span>, I take pride in delivering clean, maintainable, and test-driven codebases. My background in Quality Assurance (QA) allows me to approach development with a unique "quality-first" mindset, ensuring every application I build is bug-free and follows industry best practices.`,
+  `I am an active contributor to the <span class="bg-yellow-400 text-black px-1 dark:bg-transparent dark:text-text-main font-bold border-b border-yellow-400">Open Source</span> community and constantly refine my skills by solving complex architectural challenges. Whether I'm collaborating on <a href="https://github.com/iMoloy" target="_blank" class="text-yellow-400 hover:text-text-main transition-all underline">GitHub</a> or connecting with industry professionals on <a href="https://linkedin.com/in/imoloy" target="_blank" class="text-yellow-400 hover:text-text-main transition-all underline">LinkedIn</a>, I am always driven by a commitment to innovation and lifelong learning.`,
 ];
 
 export const experience = [
@@ -140,8 +140,8 @@ export const education = [
   },
   {
     id: 3,
-    period: "2026",
-    degree: "Complete Full Stack Web Development",
+    period: "Jan 2026 — Jun 2026",
+    degree: "Complete Full Stack Web Development (Batch 13)",
     institution: "Programming Hero",
     description: "Intensive professional training program covering the MERN stack (MongoDB, Express.js, React, Node.js).",
   },

@@ -1,55 +1,90 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { education } from "@/data/portfolio";
 
-export default function Education({ items }) {
+export default function Education() {
   return (
-    <section id="education" className="py-24 px-6 max-w-6xl mx-auto border-t border-border-main flex flex-col md:flex-row gap-12 md:gap-24 overflow-hidden">
+    <section id="education" className="py-24 px-6 max-w-6xl mx-auto overflow-hidden">
       <motion.div 
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.6 }}
-        className="md:w-1/3"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-16"
       >
-        <h2 className="text-4xl md:text-5xl font-bold text-text-main tracking-tight sticky top-32">Education</h2>
+        <h2 className="text-2xl md:text-3xl font-black text-text-main tracking-tighter uppercase mb-2">Education & Certs</h2>
+        <div className="w-16 h-1.5 bg-yellow-400"></div>
       </motion.div>
-      <div className="md:w-2/3 space-y-16">
-        {items.map((item, index) => (
-          <motion.div 
-            key={item.id} 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="relative group"
-          >
-            <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4 mb-2">
-              <span className="text-sm font-semibold text-accent tracking-wider uppercase shrink-0 sm:w-40">{item.period}</span>
-              <h3 className="text-2xl font-bold text-text-main group-hover:text-accent transition-colors">{item.degree}</h3>
-            </div>
-            <div className="sm:pl-44 mb-4">
-              <p className="text-xl text-text-main font-medium mb-4">{item.institution}</p>
-              <p className="text-text-muted mb-6 leading-relaxed">{item.description}</p>
-              {item.links && (
-                <div className="flex flex-col gap-3 mt-4">
-                  {item.links.map((link, i) => (
-                    <a 
-                      key={i} 
-                      href={link.url} 
-                      target="_blank" 
-                      rel="noreferrer" 
-                      className="inline-flex items-center gap-2 text-accent hover:text-text-main transition-colors text-sm font-medium"
-                    >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-                      {link.name} Credential
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
-          </motion.div>
-        ))}
+
+      <div className="relative">
+        {/* Central Vertical Line */}
+        <div className="absolute left-1/2 -translate-x-1/2 h-full w-1 bg-yellow-400 hidden md:block" />
+
+        <div className="flex flex-col">
+          {education.map((edu, index) => {
+            const isRight = index % 2 === 0;
+            
+            return (
+              <div 
+                key={index} 
+                className={`relative flex items-center justify-center md:justify-between w-full ${index !== 0 ? "md:-mt-16" : ""}`}
+              >
+                {/* Connector Dot */}
+                <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-yellow-400 border-4 border-border-main z-10 hidden md:block" />
+
+                {/* Left side spacer/content */}
+                {isRight && <div className="hidden md:block w-[45%]" />}
+
+                <motion.div
+                  initial={{ opacity: 0, x: isRight ? 100 : -100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  className={`w-full md:w-[48%] ${isRight ? "md:text-left" : "md:text-right"} flex flex-col z-20`}
+                >
+                  <div className="p-6 border-2 border-border-main bg-card hover:border-yellow-400 transition-all group shadow-2xl">
+                    <span className="text-xs font-black text-black bg-yellow-400 px-2 py-0.5 uppercase tracking-widest mb-3 inline-block">
+                      {edu.year || edu.period}
+                    </span>
+                    <h3 className="text-xl font-black text-text-main uppercase mb-2">
+                      {edu.degree}
+                    </h3>
+                    <p className="text-md font-bold text-black bg-yellow-400 px-2 py-0.5 inline-block dark:bg-transparent dark:text-yellow-400 dark:p-0 uppercase tracking-tighter mb-4">
+                      {edu.institution}
+                    </p>
+                    <p className="text-xs text-text-muted leading-relaxed font-medium mb-4">
+                      {edu.description}
+                    </p>
+
+                    {/* Simplilearn Specific Links */}
+                    {edu.links && edu.links.length > 0 && (
+                      <div className="mt-4 pt-4 border-t border-border-main">
+                        <p className="text-[10px] font-black text-yellow-400 uppercase mb-3 tracking-widest">Credentials:</p>
+                        <div className="flex flex-col gap-2">
+                          {edu.links.map((link, idx) => (
+                            <a 
+                              key={idx}
+                              href={link.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-[10px] font-bold text-text-main hover:text-yellow-400 flex items-center gap-2 uppercase tracking-tight group/link"
+                            >
+                              <span className="w-1.5 h-1.5 bg-yellow-400 group-hover/link:animate-ping" />
+                              {link.name}
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </motion.div>
+
+                {/* Right side spacer/content */}
+                {!isRight && <div className="hidden md:block w-[45%]" />}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

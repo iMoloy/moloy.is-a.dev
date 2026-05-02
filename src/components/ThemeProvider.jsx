@@ -8,16 +8,10 @@ export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
-    // Check local storage or system preference on mount
-    const storedTheme = localStorage.getItem("theme");
-    if (storedTheme) {
-      setTheme(storedTheme);
-      document.documentElement.classList.toggle("dark", storedTheme === "dark");
-    } else {
-      const isSystemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      setTheme(isSystemDark ? "dark" : "light");
-      document.documentElement.classList.toggle("dark", isSystemDark);
-    }
+    // Check local storage or default to dark on mount
+    const storedTheme = localStorage.getItem("theme") || "dark";
+    setTheme(storedTheme);
+    document.documentElement.classList.toggle("dark", storedTheme === "dark");
   }, []);
 
   const toggleTheme = () => {

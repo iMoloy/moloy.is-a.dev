@@ -62,14 +62,30 @@ export default function Navbar() {
               delay: Math.random() * 5,
               ease: "linear"
             }}
-            className="absolute w-px h-8 bg-gradient-to-b from-accent to-transparent"
+            className="absolute w-px h-8 bg-gradient-to-b from-yellow-400 to-transparent"
           />
         ))}
       </div>
 
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between relative z-10">
-        <Link href="/" className="text-xl font-bold tracking-tighter text-text-main group">
-          Moloy<span className="text-accent group-hover:animate-pulse">.</span>
+        <Link href="/" className="flex items-center gap-3 group">
+          {/* Brand Identity */}
+          <div className="flex items-center gap-2">
+            <span className="text-2xl font-black tracking-tighter text-text-main uppercase">
+              <span className="text-yellow-400">M</span>
+              <span className="text-yellow-400">O</span>
+              LO
+              <span className="text-yellow-400">Y</span>
+            </span>
+            
+            {/* Tagline */}
+            <div className="flex items-center gap-1.5 font-bold text-sm tracking-tight hidden sm:flex">
+              <span className="text-yellow-400">{`{`}</span>
+              <span className="text-text-main">is a</span>
+              <span className="text-yellow-400 uppercase">DEV</span>
+              <span className="text-yellow-400">{`}`}</span>
+            </div>
+          </div>
         </Link>
         
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-text-muted">
@@ -82,15 +98,17 @@ export default function Navbar() {
               <Link 
                 key={link.name}
                 href={link.href} 
-                className={`transition-all duration-300 relative py-1 ${
-                  isActive ? "text-accent font-semibold" : "hover:text-accent"
+                className={`transition-all duration-300 relative py-1 px-2 ${
+                  isActive 
+                    ? "bg-yellow-400 text-black dark:bg-transparent dark:text-yellow-400 font-black" 
+                    : "text-text-muted hover:text-yellow-400"
                 }`}
               >
                 {link.name}
                 {isActive && (
                   <motion.div 
                     layoutId="activeNav"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-accent rounded-full"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-black dark:bg-yellow-400"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                   />
@@ -117,7 +135,7 @@ export default function Navbar() {
             href="/resume.pdf" 
             target="_blank"
             rel="noopener noreferrer" 
-            className="hidden sm:block px-5 py-2 bg-yellow-400 text-black border-2 border-white font-black text-xs hover:bg-white transition-all duration-300 uppercase tracking-widest"
+            className="hidden sm:block px-5 py-2 bg-black text-white dark:bg-yellow-400 dark:text-black border-2 border-black dark:border-white font-black text-xs hover:bg-yellow-400 hover:text-black transition-all duration-300 uppercase tracking-widest"
           >
             Resume
           </a>

@@ -113,7 +113,7 @@ export default function BigBangText({ texts }) {
                 rotate: 360
               }}
               transition={{ duration: Math.random() * 0.5 + 0.5, ease: "easeOut" }}
-              className="absolute w-1.5 h-1.5 bg-yellow-400"
+              className="absolute w-1.5 h-1.5 bg-yellow-400 rounded-full bigbang-dot"
             />
           ))}
         </div>

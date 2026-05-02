@@ -21,27 +21,27 @@
 }
 
 :root {
-  /* LIGHT MODE (Strictly BWY) */
+  /* PERFECT INVERSION: LIGHT MODE */
   --bg-main: #FFFFFF;
   --bg-card: #FFFFFF;
   --bg-nav: rgba(255, 255, 255, 0.9);
   --text-main: #000000;
-  --text-muted: #000000;
+  --text-muted: #1A1A1A;
   --accent: #FFFF00;
   --accent-hover: #000000;
   --accent-bg: #FFFF00;
   --border-main: #000000;
-  --selection-bg: #FFFF00;
-  --selection-text: #000000;
+  --selection-bg: #000000;
+  --selection-text: #FFFF00;
 }
 
 .dark {
-  /* DARK MODE (Strictly BWY) */
+  /* PERFECT INVERSION: DARK MODE */
   --bg-main: #000000;
   --bg-card: #000000;
   --bg-nav: rgba(0, 0, 0, 0.9);
   --text-main: #FFFFFF;
-  --text-muted: #FFFFFF;
+  --text-muted: #E5E5E5;
   --accent: #FFFF00;
   --accent-hover: #FFFFFF;
   --accent-bg: rgba(255, 255, 0, 0.1);
@@ -64,21 +64,35 @@ body {
   overflow-x: hidden;
 }
 
-/* Custom Scrollbar BWY */
+/* Custom BWY Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: var(--bg-main);
 }
 ::-webkit-scrollbar-thumb {
-  background: #FFFF00;
-  border-radius: 0px;
+  background: var(--text-main);
+  border: 2px solid var(--bg-main);
 }
 
-/* Strict Borders */
-.border-strict {
-  border: 1px solid var(--border-main);
+/* --- STRICT BOX UI --- */
+/* Apply sharp corners to all common containers and buttons */
+div, section, header, footer, nav, a, button, input, textarea, .bg-card, .border {
+  border-radius: 0px !important;
+}
+
+/* --- EXCEPTION: Keep these round --- */
+.rounded-full, 
+[class*="rounded-full"],
+.bigbang-dot,
+.cursor-inner,
+.cursor-outer {
+  border-radius: 9999px !important;
+}
+
+* {
+  box-shadow: none !important;
 }
 
 .section-padding {
@@ -89,13 +103,7 @@ h1, h2, h3 {
   @apply tracking-tighter font-black uppercase;
 }
 
-/* Remove all shadows for a flat, strict look */
-* {
-  box-shadow: none !important;
-}
-
-/* High Contrast selection */
 ::selection {
-  background-color: #FFFF00;
-  color: #000000;
+  background-color: var(--selection-bg);
+  color: var(--selection-text);
 }
