@@ -21,35 +21,38 @@
 }
 
 :root {
-  --bg-main: #f8fafc;
-  --bg-card: #ffffff;
-  --bg-nav: rgba(255, 255, 255, 0.85);
-  --text-main: #0f172a;
-  --text-muted: #475569;
-  --accent: #4f46e5;
-  --accent-hover: #4338ca;
-  --accent-bg: rgba(79, 70, 229, 0.1);
-  --border-main: rgba(0, 0, 0, 0.1);
-  --selection-bg: #4f46e5;
-  --selection-text: #ffffff;
+  /* LIGHT MODE (Strictly BWY) */
+  --bg-main: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-nav: rgba(255, 255, 255, 0.9);
+  --text-main: #000000;
+  --text-muted: #000000;
+  --accent: #FFFF00;
+  --accent-hover: #000000;
+  --accent-bg: #FFFF00;
+  --border-main: #000000;
+  --selection-bg: #FFFF00;
+  --selection-text: #000000;
 }
 
 .dark {
+  /* DARK MODE (Strictly BWY) */
   --bg-main: #000000;
-  --bg-card: #0a0a0a;
-  --bg-nav: rgba(0, 0, 0, 0.85);
-  --text-main: #ffffff;
-  --text-muted: #a1a1aa;
-  --accent: #ccff00;
-  --accent-hover: #e4ff4d;
-  --accent-bg: rgba(204, 255, 0, 0.1);
-  --border-main: rgba(255, 255, 255, 0.1);
-  --selection-bg: #ccff00;
+  --bg-card: #000000;
+  --bg-nav: rgba(0, 0, 0, 0.9);
+  --text-main: #FFFFFF;
+  --text-muted: #FFFFFF;
+  --accent: #FFFF00;
+  --accent-hover: #FFFFFF;
+  --accent-bg: rgba(255, 255, 0, 0.1);
+  --border-main: #FFFFFF;
+  --selection-bg: #FFFF00;
   --selection-text: #000000;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -58,24 +61,41 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 1.6;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
 }
 
-::selection {
-  background-color: var(--selection-bg);
-  color: var(--selection-text);
-}
-
+/* Custom Scrollbar BWY */
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--bg-main);
+  background: #000000;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--text-muted);
-  border-radius: 4px;
+  background: #FFFF00;
+  border-radius: 0px;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent);
+
+/* Strict Borders */
+.border-strict {
+  border: 1px solid var(--border-main);
+}
+
+.section-padding {
+  @apply py-20 px-6 max-w-6xl mx-auto;
+}
+
+h1, h2, h3 {
+  @apply tracking-tighter font-black uppercase;
+}
+
+/* Remove all shadows for a flat, strict look */
+* {
+  box-shadow: none !important;
+}
+
+/* High Contrast selection */
+::selection {
+  background-color: #FFFF00;
+  color: #000000;
 }
