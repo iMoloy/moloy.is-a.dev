@@ -27,7 +27,7 @@
 
 ---
 
-![under-construction](https://raw.githubusercontent.com/iMoloy/moloy.is-a.dev/main/public/UnderConstruction.gif)
+![under-construction](https://github.com/iMoloy/moloy.is-a.dev/raw/main/public/UnderConstruction.gif)
 
 <br/>
 
