@@ -52,7 +52,7 @@ export default function Hero({ profile }) {
   }, []);
 
   return (
-    <section className="pt-24 pb-16 md:pt-32 md:pb-24 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-16 overflow-visible bg-background">
+    <section className="pt-16 pb-12 md:pt-24 md:pb-20 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-16 overflow-visible bg-background">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

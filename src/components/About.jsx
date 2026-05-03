@@ -7,12 +7,12 @@ export default function About() {
   const aboutParagraphs = about;
 
   return (
-    <section id="about" className="py-24 px-6 max-w-6xl mx-auto overflow-hidden">
+    <section id="about" className="py-16 md:py-20 px-6 max-w-6xl mx-auto overflow-hidden">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-16"
+        className="mb-10"
       >
         <h2 className="text-2xl md:text-3xl font-black text-text-main tracking-tighter uppercase mb-2">About Me</h2>
         <div className="w-16 h-1.5 bg-yellow-400"></div>

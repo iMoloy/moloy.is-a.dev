@@ -35,13 +35,13 @@ export default function Projects({ limit, isAllProjectsPage = false }) {
     : projects.filter(p => p.featured).slice(0, 4);
 
   return (
-    <section id="projects" className="py-24 px-6 max-w-6xl mx-auto bg-background">
+    <section id="projects" className="py-16 md:py-20 px-6 max-w-6xl mx-auto bg-background">
       {!isAllProjectsPage && (
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-4"
+          className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-4"
         >
           <div>
             <h2 className="text-2xl md:text-3xl font-black text-text-main tracking-tighter uppercase mb-2">Selected Works</h2>

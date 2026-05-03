@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 export default function ProblemSolving({ items }) {
   return (
-    <section className="py-24 px-6 max-w-6xl mx-auto border-t border-border-main overflow-hidden">
+    <section className="py-16 md:py-20 px-6 max-w-6xl mx-auto border-t border-border-main overflow-hidden">
       <motion.div 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.6 }}
-        className="mb-16"
+        className="mb-10"
       >
         <h2 className="text-4xl md:text-5xl font-bold text-text-main tracking-tight">Problem Solving</h2>
         <p className="text-text-muted mt-4 text-lg">Continuous learning through competitive programming and algorithmic challenges.</p>

@@ -2,14 +2,15 @@
 
 import Link from "next/link";
 import { useTheme } from "./ThemeProvider";
-import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
   const pathname = usePathname();
   const [activeSection, setActiveSection] = useState("about");
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     if (pathname !== "/") {
@@ -68,27 +69,38 @@ export default function Navbar() {
       </div>
 
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between relative z-10">
-        <Link href="/" className="flex items-center gap-3 group">
+        <div 
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex items-center gap-3 cursor-pointer group"
+        >
           {/* Brand Identity */}
-          <div className="flex items-center gap-2">
-            <span className="text-2xl font-black tracking-tighter text-text-main uppercase">
+          <div className="flex items-center gap-1.5 sm:gap-2">
+            <span className="text-xl sm:text-2xl font-black tracking-tighter text-text-main uppercase">
               <span className="text-yellow-400">M</span>
               <span className="text-yellow-400">O</span>
               LO
               <span className="text-yellow-400">Y</span>
             </span>
             
-            {/* Tagline */}
-            <div className="flex items-center gap-1.5 font-bold text-sm tracking-tight hidden sm:flex">
+            {/* Tagline - Now visible on mobile but smaller */}
+            <div className="flex items-center gap-1 sm:gap-1.5 font-bold text-[10px] sm:text-sm tracking-tight">
               <span className="text-yellow-400">{`{`}</span>
               <span className="text-text-main">is a</span>
               <span className="text-yellow-400 uppercase">DEV</span>
               <span className="text-yellow-400">{`}`}</span>
             </div>
           </div>
-        </Link>
+          
+          {/* Mobile/Tablet Chevron Indicator */}
+          <motion.div 
+            animate={{ rotate: isOpen ? 180 : 0 }}
+            className="lg:hidden text-yellow-400"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </motion.div>
+        </div>
         
-        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-text-muted">
+        <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-text-muted">
           {navLinks.map((link) => {
             const isActive = 
               (link.href === pathname) || 
@@ -118,29 +130,64 @@ export default function Navbar() {
           })}
         </div>
 
-        <div className="flex items-center gap-4">
-          <button 
-            onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-accent-bg text-text-muted hover:text-accent transition-colors duration-300"
-            aria-label="Toggle Theme"
-          >
-            {theme === "dark" ? (
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-            ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-            )}
-          </button>
+        <div className="flex items-center gap-2 sm:gap-4">
           
           <a 
             href="/resume.pdf" 
             target="_blank"
             rel="noopener noreferrer" 
-            className="hidden sm:block px-5 py-2 bg-black text-white dark:bg-yellow-400 dark:text-black border-2 border-black dark:border-white font-black text-xs hover:bg-yellow-400 hover:text-black transition-all duration-300 uppercase tracking-widest"
+            className="px-3 sm:px-5 py-2 bg-black text-white dark:bg-yellow-400 dark:text-black border-2 border-black dark:border-white font-black text-[10px] sm:text-xs hover:bg-yellow-400 hover:text-black transition-all duration-300 uppercase tracking-widest"
           >
             Resume
           </a>
         </div>
       </div>
+      {/* Mobile/Tablet Menu Dropdown */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="lg:hidden bg-nav/95 backdrop-blur-xl border-b border-border-main overflow-hidden"
+          >
+            <div className="flex flex-col p-6 gap-4">
+              {navLinks.map((link) => {
+                const isActive = 
+                  (link.href === pathname) || 
+                  (link.id && activeSection === link.id);
+                
+                return (
+                  <Link 
+                    key={link.name}
+                    href={link.href} 
+                    onClick={() => setIsOpen(false)}
+                    className={`text-lg font-black uppercase tracking-tighter transition-all duration-300 ${
+                      isActive 
+                        ? "text-yellow-400 pl-4 border-l-4 border-yellow-400" 
+                        : "text-text-muted hover:text-yellow-400 hover:pl-2"
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
+                );
+              })}
+              
+              <div className="pt-4 border-t border-border-main/50">
+                <a 
+                  href="/resume.pdf" 
+                  target="_blank"
+                  rel="noopener noreferrer" 
+                  onClick={() => setIsOpen(false)}
+                  className="w-full block text-center px-5 py-4 bg-yellow-400 text-black font-black uppercase tracking-widest text-sm"
+                >
+                  Resume
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }
