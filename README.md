@@ -5,15 +5,18 @@
 
 <div align="center">
 
-![Moloy Logo](https://github.com/iMoloy/moloy.is-a.dev/blob/main/public/moloy_logo.png?raw=true)
+<img src="https://raw.githubusercontent.com/iMoloy/moloy.is-a.dev/main/public/moloy_logo.png" width="120" alt="Moloy Logo" />
 
 <br/>
 
-**Moloy Krishna Paul** — Full Stack Web Developer
+# 🚀 Moloy Krishna Paul
+### Full Stack Web Developer • MERN Stack Specialist
 
-[![Portfolio](https://img.shields.io/badge/🌐_Website-moloy.is--a.dev-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://moloy.is-a.dev)
+[![Portfolio](https://img.shields.io/badge/🌐_Website-moloy.is--a.dev-FFFF00?style=for-the-badge&logo=vercel&logoColor=black)](https://moloy.is-a.dev)
 &nbsp;
 [![Status](https://img.shields.io/badge/💼_Status-Available_for_Hire-22c55e?style=for-the-badge)](mailto:moloykrishnapaul@gmail.com)
+&nbsp;
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/imoloy)
 
 </div>
 
@@ -21,31 +24,33 @@
 
 ---
 
-<br/>
-
 <div align="center">
 
----
-
-![under-construction](https://github.com/iMoloy/moloy.is-a.dev/raw/main/public/UnderConstruction.gif)
+<img src="https://raw.githubusercontent.com/iMoloy/moloy.is-a.dev/main/public/UnderConstruction.gif" width="400" alt="under-construction" />
 
 <br/>
 
-### ⚠️ If you are seeing this page — this website is currently under construction.
-
-<br/>
-
-> 💬 &nbsp; _Thank you for your patience. Something great is coming._ &nbsp; 🚀
-
-<br/>
-
-**Visit the live preview in the meantime:**
+> [!IMPORTANT]
+> ### ⚠️ SYSTEM NOTICE: Website Under Construction
+> If you are seeing this page, it means **moloy.is-a.dev** is currently undergoing scheduled maintenance or the domain is being propagated. 
+> 
+> **Please visit my live preview mirror below:**
 
 ## 🔗 &nbsp; [moloy.vercel.app](https://moloy.vercel.app)
 
 [![Preview](https://img.shields.io/badge/👁️_Open_Live_Preview-moloy.vercel.app-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://moloy.vercel.app)
 
+</div>
+
+<br/>
+
 ---
+
+<div align="center">
+
+| 🏆 Experience | 🛠️ Projects | 📈 Total Commits |
+| :---: | :---: | :---: |
+| **3+ Years** | **20+ Apps** | **400+ Contributions** |
 
 </div>
 
@@ -53,64 +58,42 @@
 
 ---
 
-<br/>
+## 👤 `01` About Me
 
 <div align="center">
 
-| `#01` Experience | `#02` Projects | `#03` Commits  |
-| :--------------: | :------------: | :------------: |
-|   **3+ Years**   |  **20+ Apps**  | **400+ Total** |
-
-</div>
-
-<br/>
-
----
-
-## `01` &nbsp;—&nbsp; About Me
-
-<div align="center">
-
-I'm **Moloy Krishna Paul**, a passionate **Full Stack Web Developer** specializing in the **MERN Stack**. My focus is on crafting high-performance, pixel-perfect user interfaces that seamlessly blend aesthetic design with robust, scalable engineering.
+I'm **Moloy Krishna Paul**, a passionate **Full Stack Web Developer** specializing in the **MERN Stack**. I craft high-performance, pixel-perfect user interfaces that seamlessly blend aesthetic design with robust, scalable engineering.
 
 With a strong foundation in **React**, **Node.js**, **Express.js**, and **MongoDB**, I deliver clean, maintainable, and test-driven codebases. My background in **Quality Assurance (QA)** allows me to approach every project with a unique _quality-first_ mindset — ensuring every application I ship is performant, bug-free, and follows industry best practices.
 
-I am an active contributor to the open source community and am constantly refining my skills by solving complex architectural challenges — driven by a lifelong commitment to innovation and learning.
-
 </div>
 
 <br/>
 
 ---
 
-## `02` &nbsp;—&nbsp; Technical Stack
+## 🛠️ `02` Technical Stack
 
 <div align="center">
 
-### ⚙️ &nbsp; Core Technologies
-
+### ⚙️ Core Technologies
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
-### 🎨 &nbsp; Styling & Motion
-
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+### 🎨 Styling & Motion
+![TailwindCSS](https://img.shields.io/badge/Tailwind_ CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-### 🛠️ &nbsp; Tools & Workflow
-
+### 🔧 Tools & Workflow
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
 </div>
 
@@ -118,18 +101,18 @@ I am an active contributor to the open source community and am constantly refini
 
 ---
 
-## `03` &nbsp;—&nbsp; Selected Works
+## 📁 `03` Selected Works
 
 <div align="center">
 
-|   #    | Project                     | Description                                                                                 | Stack                                            |                                                           Links                                                            |
-| :----: | --------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------: |
-| **01** | **Tiles Gallery**           | Full-stack image gallery with dynamic tile layouts, user authentication & real-time updates | `React` `Node.js` `MongoDB` `Express` `Tailwind` |          [↗ Live](https://tiles-gallery-six.vercel.app) &nbsp; [⌥ Repo](https://github.com/iMoloy/tiles-gallery)           |
-| **02** | **Digi Tools**              | Digital tools marketplace with dynamic product catalog & user feedback system               | `React` `JavaScript` `DaisyUI` `GitHub API`      |            [↗ Live](https://moloy-digitools.netlify.app/) &nbsp; [⌥ Repo](https://github.com/iMoloy/DigiTools)             |
-| **03** | **GitHub Issues Tracker**   | Real-time GitHub issues viewer with clean, fully responsive UI                              | `JavaScript` `Tailwind CSS` `GitHub API`         |   [↗ Live](https://imoloy.github.io/githubIssuesTracker) &nbsp; [⌥ Repo](https://github.com/iMoloy/githubIssuesTracker)    |
-| **04** | **Job Application Tracker** | Manage and organise job applications — track status, dates & notes in one place             | `JavaScript` `HTML` `Tailwind CSS`               | [↗ Live](https://imoloy.github.io/jobApplicationTracker/) &nbsp; [⌥ Repo](https://github.com/iMoloy/jobApplicationTracker) |
+| Project | Description | Stack | Links |
+| :--- | :--- | :--- | :--- |
+| **Tiles Gallery** | Full-stack gallery with dynamic layouts & Auth | `MERN` `Tailwind` | [Live](https://tiles-gallery-six.vercel.app) / [Repo](https://github.com/iMoloy/tiles-gallery) |
+| **Digi Tools** | Digital marketplace with dynamic catalog | `React` `GitHub API` | [Live](https://moloy-digitools.netlify.app/) / [Repo](https://github.com/iMoloy/DigiTools) |
+| **Issues Tracker** | Real-time GitHub issues viewer | `JS` `Tailwind` | [Live](https://imoloy.github.io/githubIssuesTracker) / [Repo](https://github.com/iMoloy/githubIssuesTracker) |
+| **App Tracker** | Manage and organize job applications | `JS` `HTML/CSS` | [Live](https://imoloy.github.io/jobApplicationTracker/) / [Repo](https://github.com/iMoloy/jobApplicationTracker) |
 
-💡 &nbsp; Browse all projects at **[moloy.vercel.app/projects](https://moloy.vercel.app/projects)**
+> 💡 Browse more at **[moloy.vercel.app/projects](https://moloy.vercel.app/projects)**
 
 </div>
 
@@ -137,22 +120,16 @@ I am an active contributor to the open source community and am constantly refini
 
 ---
 
-## `04` &nbsp;—&nbsp; Work Experience
+## 💼 `04` Work Experience
 
 <div align="center">
 
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                           WORK EXPERIENCE                               │
-├──────────────────────┬──────────────────────────────┬───────────────────┤
-│  PERIOD              │  ROLE                        │  COMPANY          │
-├──────────────────────┼──────────────────────────────┼───────────────────┤
-│  Jan 2025 – Present  │  Full Stack Web Developer    │  MERN Stack       │
-│  Nov 2025 – Mar 2026 │  QA Engineer                 │  DigitX           │
-│  Jan 2023 – Dec 2024 │  Pharmacy Assistant          │  Brindra Pharmacy │
-│  Oct 2022 – Dec 2022 │  Telesales Executive         │  Chaldal          │
-└──────────────────────┴──────────────────────────────┴───────────────────┘
-```
+| Period | Role | Company |
+| :--- | :--- | :--- |
+| **Jan 2025 – Present** | Full Stack Web Developer | MERN Stack |
+| **Nov 2025 – Mar 2026** | QA Engineer | DigitX |
+| **Jan 2023 – Dec 2024** | Pharmacy Assistant | Brindra Pharmacy |
+| **Oct 2022 – Dec 2022** | Telesales Executive | Chaldal |
 
 </div>
 
@@ -160,36 +137,26 @@ I am an active contributor to the open source community and am constantly refini
 
 ---
 
-## `05` &nbsp;—&nbsp; Education & Certifications
+## 🎓 `05` Education & Certifications
 
 <div align="center">
 
-```
-┌──────────────────────────────────────────────────────────────────────────┐
-│                         EDUCATION & CERTS                                │
-├──────────────────┬───────────────────────────────────┬───────────────────┤
-│  PERIOD          │  QUALIFICATION                    │  INSTITUTION      │
-├──────────────────┼───────────────────────────────────┼───────────────────┤
-│  2020 – Ongoing  │  MSS (Master of Social Science)   │  GM Madhusudan    │
-│  2016 – 2020     │  BSS (Bachelor of Social Science) │  GM Madhusudan    │
-│  Jan – Jun 2026  │  Complete Full Stack Web Dev      │  Programming Hero │
-│                  │  (Batch 13) — MERN Stack          │                   │
-├──────────────────┼───────────────────────────────────┼───────────────────┤
-│  Completed       │  Full Stack Developer Course      │  Simplilearn      │
-│  Completed       │  Introduction to Front-End Dev    │  Simplilearn      │
-│  Completed       │  Introduction to Software Testing │  Simplilearn      │
-│  Completed       │  Automation Testing Basics        │  Simplilearn      │
-└──────────────────┴───────────────────────────────────┴───────────────────┘
-```
+| Period | Qualification | Institution |
+| :--- | :--- | :--- |
+| **2020 – Ongoing** | MSS (Master of Social Science) | GM Madhusudan College |
+| **2016 – 2020** | BSS (Bachelor of Social Science) | GM Madhusudan College |
+| **Jan – Jun 2026** | Complete Full Stack Web Dev | Programming Hero |
 
-**🎓 Simplilearn Certificate Credentials:**
+<br/>
 
-| Course                                |                        Link                         |
-| ------------------------------------- | :-------------------------------------------------: |
-| Full Stack Developer Course           | [View ↗](https://simpli-web.app.link/e/dg5jnzNBWXb) |
-| Introduction to Front-End Development | [View ↗](https://simpli-web.app.link/e/aDurUJPA2Yb) |
-| Introduction to Software Testing      | [View ↗](https://simpli-web.app.link/e/WyrBZL7KRXb) |
-| Automation Testing Basics             | [View ↗](https://simpli-web.app.link/e/PsIJt61YQYb) |
+**📜 Professional Certifications (Simplilearn)**
+
+| Course | Credential |
+| :--- | :---: |
+| Full Stack Developer Course | [Verify ↗](https://simpli-web.app.link/e/dg5jnzNBWXb) |
+| Introduction to Front-End Development | [Verify ↗](https://simpli-web.app.link/e/aDurUJPA2Yb) |
+| Introduction to Software Testing | [Verify ↗](https://simpli-web.app.link/e/WyrBZL7KRXb) |
+| Automation Testing Basics | [Verify ↗](https://simpli-web.app.link/e/PsIJt61YQYb) |
 
 </div>
 
@@ -197,34 +164,24 @@ I am an active contributor to the open source community and am constantly refini
 
 ---
 
-## `06` &nbsp;—&nbsp; Connect With Me
-
 <div align="center">
+
+## 📬 `06` Get In Touch
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/imoloy)
 &nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/iMoloy)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=linkedin&logoColor=white)](https://github.com/iMoloy)
 &nbsp;
 [![Email](https://img.shields.io/badge/Email-Hire_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:moloykrishnapaul@gmail.com)
-&nbsp;
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://moloy.is-a.dev)
-
-</div>
 
 <br/>
 
----
-
-<div align="center">
-
-![Building...](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
+<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="150" alt="Building..." />
 
 <br/>
 
-_Coded in [VS Code](https://code.visualstudio.com/) &nbsp;·&nbsp; Built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/) & [Framer Motion](https://www.framer.com/motion/)_
+_Coded in **VS Code** • Built with **Next.js**, **Tailwind CSS** & **Framer Motion**_
 
-<br/>
-
-**© 2026 Moloy Krishna Paul &nbsp;·&nbsp; ALL RIGHTS RESERVED.**
+**© 2026 Moloy Krishna Paul • ALL RIGHTS RESERVED**
 
 </div>
