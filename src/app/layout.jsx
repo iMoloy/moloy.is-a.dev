@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import StarBackground from "@/components/StarBackground";
 import CustomCursor from "@/components/CustomCursor";
+import ContactFloating from "@/components/ContactFloating";
 import "./globals.css";
 
 
@@ -58,6 +59,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <CustomCursor />
           <StarBackground />
+          <ContactFloating />
           {children}
         </ThemeProvider>
       </body>
