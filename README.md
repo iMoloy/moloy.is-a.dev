@@ -5,7 +5,9 @@
 
 <div align="center">
 
-![Moloy Logo](https://raw.githubusercontent.com/iMoloy/moloy.is-a.dev/main/public/moloy_logo.png)
+![Moloy Logo](https://github.com/iMoloy/moloy.is-a.dev/blob/main/public/moloy_logo.png?raw=true)
+
+<br/>
 
 **Moloy Krishna Paul** — Full Stack Web Developer
 
@@ -25,7 +27,7 @@
 
 ---
 
-![under-construction](https://img.shields.io/badge/🚧%20WEBSITE%20UNDER%20CONSTRUCTION%20🚧-FF0000?style=for-the-badge)
+![under-construction](https://raw.githubusercontent.com/iMoloy/moloy.is-a.dev/main/public/UnderConstruction.gif)
 
 <br/>
 
@@ -33,7 +35,7 @@
 
 <br/>
 
-> 💬 &nbsp; *Thank you for your patience. Something great is coming.* &nbsp; 🚀
+> 💬 &nbsp; _Thank you for your patience. Something great is coming._ &nbsp; 🚀
 
 <br/>
 
@@ -55,9 +57,9 @@
 
 <div align="center">
 
-| `#01` Experience | `#02` Projects | `#03` Commits |
-|:---:|:---:|:---:|
-| **3+ Years** | **20+ Apps** | **400+ Total** |
+| `#01` Experience | `#02` Projects | `#03` Commits  |
+| :--------------: | :------------: | :------------: |
+|   **3+ Years**   |  **20+ Apps**  | **400+ Total** |
 
 </div>
 
@@ -71,7 +73,7 @@
 
 I'm **Moloy Krishna Paul**, a passionate **Full Stack Web Developer** specializing in the **MERN Stack**. My focus is on crafting high-performance, pixel-perfect user interfaces that seamlessly blend aesthetic design with robust, scalable engineering.
 
-With a strong foundation in **React**, **Node.js**, **Express.js**, and **MongoDB**, I deliver clean, maintainable, and test-driven codebases. My background in **Quality Assurance (QA)** allows me to approach every project with a unique *quality-first* mindset — ensuring every application I ship is performant, bug-free, and follows industry best practices.
+With a strong foundation in **React**, **Node.js**, **Express.js**, and **MongoDB**, I deliver clean, maintainable, and test-driven codebases. My background in **Quality Assurance (QA)** allows me to approach every project with a unique _quality-first_ mindset — ensuring every application I ship is performant, bug-free, and follows industry best practices.
 
 I am an active contributor to the open source community and am constantly refining my skills by solving complex architectural challenges — driven by a lifelong commitment to innovation and learning.
 
@@ -120,12 +122,12 @@ I am an active contributor to the open source community and am constantly refini
 
 <div align="center">
 
-| # | Project | Description | Stack | Links |
-|:---:|---|---|---|:---:|
-| **01** | **Tiles Gallery** | Full-stack image gallery with dynamic tile layouts, user authentication & real-time updates | `React` `Node.js` `MongoDB` `Express` `Tailwind` | [↗ Live](https://tiles-gallery-six.vercel.app) &nbsp; [⌥ Repo](https://github.com/iMoloy/tiles-gallery) |
-| **02** | **Digi Tools** | Digital tools marketplace with dynamic product catalog & user feedback system | `React` `JavaScript` `DaisyUI` `GitHub API` | [↗ Live](https://moloy-digitools.netlify.app/) &nbsp; [⌥ Repo](https://github.com/iMoloy/DigiTools) |
-| **03** | **GitHub Issues Tracker** | Real-time GitHub issues viewer with clean, fully responsive UI | `JavaScript` `Tailwind CSS` `GitHub API` | [↗ Live](https://imoloy.github.io/githubIssuesTracker) &nbsp; [⌥ Repo](https://github.com/iMoloy/githubIssuesTracker) |
-| **04** | **Job Application Tracker** | Manage and organise job applications — track status, dates & notes in one place | `JavaScript` `HTML` `Tailwind CSS` | [↗ Live](https://imoloy.github.io/jobApplicationTracker/) &nbsp; [⌥ Repo](https://github.com/iMoloy/jobApplicationTracker) |
+|   #    | Project                     | Description                                                                                 | Stack                                            |                                                           Links                                                            |
+| :----: | --------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------: |
+| **01** | **Tiles Gallery**           | Full-stack image gallery with dynamic tile layouts, user authentication & real-time updates | `React` `Node.js` `MongoDB` `Express` `Tailwind` |          [↗ Live](https://tiles-gallery-six.vercel.app) &nbsp; [⌥ Repo](https://github.com/iMoloy/tiles-gallery)           |
+| **02** | **Digi Tools**              | Digital tools marketplace with dynamic product catalog & user feedback system               | `React` `JavaScript` `DaisyUI` `GitHub API`      |            [↗ Live](https://moloy-digitools.netlify.app/) &nbsp; [⌥ Repo](https://github.com/iMoloy/DigiTools)             |
+| **03** | **GitHub Issues Tracker**   | Real-time GitHub issues viewer with clean, fully responsive UI                              | `JavaScript` `Tailwind CSS` `GitHub API`         |   [↗ Live](https://imoloy.github.io/githubIssuesTracker) &nbsp; [⌥ Repo](https://github.com/iMoloy/githubIssuesTracker)    |
+| **04** | **Job Application Tracker** | Manage and organise job applications — track status, dates & notes in one place             | `JavaScript` `HTML` `Tailwind CSS`               | [↗ Live](https://imoloy.github.io/jobApplicationTracker/) &nbsp; [⌥ Repo](https://github.com/iMoloy/jobApplicationTracker) |
 
 💡 &nbsp; Browse all projects at **[moloy.vercel.app/projects](https://moloy.vercel.app/projects)**
 
@@ -182,12 +184,12 @@ I am an active contributor to the open source community and am constantly refini
 
 **🎓 Simplilearn Certificate Credentials:**
 
-| Course | Link |
-|---|:---:|
-| Full Stack Developer Course | [View ↗](https://simpli-web.app.link/e/dg5jnzNBWXb) |
+| Course                                |                        Link                         |
+| ------------------------------------- | :-------------------------------------------------: |
+| Full Stack Developer Course           | [View ↗](https://simpli-web.app.link/e/dg5jnzNBWXb) |
 | Introduction to Front-End Development | [View ↗](https://simpli-web.app.link/e/aDurUJPA2Yb) |
-| Introduction to Software Testing | [View ↗](https://simpli-web.app.link/e/WyrBZL7KRXb) |
-| Automation Testing Basics | [View ↗](https://simpli-web.app.link/e/PsIJt61YQYb) |
+| Introduction to Software Testing      | [View ↗](https://simpli-web.app.link/e/WyrBZL7KRXb) |
+| Automation Testing Basics             | [View ↗](https://simpli-web.app.link/e/PsIJt61YQYb) |
 
 </div>
 
@@ -219,7 +221,7 @@ I am an active contributor to the open source community and am constantly refini
 
 <br/>
 
-*Coded in [VS Code](https://code.visualstudio.com/) &nbsp;·&nbsp; Built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/) & [Framer Motion](https://www.framer.com/motion/)*
+_Coded in [VS Code](https://code.visualstudio.com/) &nbsp;·&nbsp; Built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/) & [Framer Motion](https://www.framer.com/motion/)_
 
 <br/>
 
