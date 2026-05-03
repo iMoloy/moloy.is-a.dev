@@ -87,7 +87,7 @@ export default function Hero({ profile }) {
         >
           <a 
             href="mailto:moloykrishnapaul@gmail.com" 
-            className="px-8 py-4 bg-black text-white dark:bg-yellow-400 dark:text-black font-black text-lg border-2 border-border-main hover:bg-yellow-400 hover:text-black dark:hover:bg-white dark:hover:text-black transition-all duration-300 active:scale-95 uppercase"
+            className="px-6 py-3 md:px-8 md:py-4 bg-black text-white dark:bg-yellow-400 dark:text-black font-black text-sm md:text-lg border-2 border-border-main hover:bg-yellow-400 hover:text-black dark:hover:bg-white dark:hover:text-black transition-all duration-300 active:scale-95 uppercase"
           >
             Work with me
           </a>
@@ -123,8 +123,8 @@ export default function Hero({ profile }) {
         {/* Badges - Dynamic Inversion */}
         <motion.div 
           animate={{ y: [0, -12, 0] }}
-          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -left-4 top-8 md:-left-12 md:top-16 z-20 bg-yellow-400 border-2 border-black p-2 md:p-3 rounded-none flex items-center gap-2 md:gap-3 shadow-[4px_4px_0px_#000]"
+          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute -left-8 top-4 md:-left-12 md:top-16 z-20 bg-yellow-400 border-2 border-black p-2 md:p-3 rounded-none flex items-center gap-2 md:gap-3 shadow-[4px_4px_0px_#000]"
         >
           <div className="text-black text-lg font-black">#01</div>
           <div>
@@ -135,8 +135,8 @@ export default function Hero({ profile }) {
 
         <motion.div 
           animate={{ y: [0, 12, 0] }}
-          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-          className="absolute -right-4 bottom-16 md:-right-12 md:bottom-24 z-20 bg-yellow-400 border-2 border-black p-2 md:p-3 rounded-none flex items-center gap-2 md:gap-3 shadow-[4px_4px_0px_#000]"
+          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          className="absolute -right-8 bottom-12 md:-right-12 md:bottom-24 z-20 bg-yellow-400 border-2 border-black p-2 md:p-3 rounded-none flex items-center gap-2 md:gap-3 shadow-[4px_4px_0px_#000]"
         >
           <div className="text-black text-lg font-black">#02</div>
           <div>
@@ -147,8 +147,8 @@ export default function Hero({ profile }) {
 
         <motion.div 
           animate={{ y: [0, -8, 0] }}
-          transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-          className="absolute left-8 -bottom-3 md:left-16 md:-bottom-6 z-20 bg-yellow-400 border-2 border-black p-2 md:p-3 rounded-none flex items-center gap-2 md:gap-3 shadow-[4px_4px_0px_#000]"
+          transition={{ duration: 9, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+          className="absolute left-1/2 -translate-x-1/2 -bottom-6 md:left-16 md:-bottom-6 md:translate-x-0 z-20 bg-yellow-400 border-2 border-black p-2 md:p-3 rounded-none flex items-center gap-2 md:gap-3 shadow-[4px_4px_0px_#000] w-max"
         >
           <div className="text-black text-lg font-black">#03</div>
           <div>
