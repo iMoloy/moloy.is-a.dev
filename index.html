@@ -1,228 +1,248 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Moloy — Under Construction</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moloy — Under Construction</title>
 
-  <meta name="description" content="Moloy Krishna Paul portfolio is under construction. Visit live preview." />
+    <meta
+      name="description"
+      content="Moloy Krishna Paul portfolio is under construction. Visit live preview."
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
 
-  <style>
-    :root {
-      --bg: #0a0a0a;
-      --card: #111111;
-      --text: #f5f5f5;
-      --muted: #9ca3af;
-      --accent: #facc15;
-    }
+    <style>
+      :root {
+        --bg: #0a0a0a;
+        --card: #111111;
+        --text: #f5f5f5;
+        --muted: #9ca3af;
+        --accent: #facc15;
+      }
 
-    * { box-sizing: border-box; }
+      * {
+        box-sizing: border-box;
+      }
 
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #000;
-      color: var(--text);
-      display: grid;
-      place-items: center;
-      min-height: 100vh;
-      overflow: hidden;
-    }
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background: #000;
+        color: var(--text);
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+      }
 
-    canvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-    }
-
-    .container {
-      position: relative;
-      z-index: 1;
-      width: min(900px, 92vw);
-      padding: 40px 30px;
-      border-radius: 24px;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.08);
-      text-align: center;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-      backdrop-filter: blur(8px);
-    }
-
-    .logo {
-      width: 220px;
-      margin-bottom: 15px;
-      animation: float 4s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0%,100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-
-    h1 {
-      font-size: clamp(30px, 4vw, 42px);
-      font-weight: 800;
-      margin: 10px 0;
-    }
-
-    .highlight { color: var(--accent); }
-
-    .subtitle {
-      color: var(--muted);
-      margin-bottom: 20px;
-    }
-
-    .desc {
-      max-width: 620px;
-      margin: 0 auto 28px;
-      line-height: 1.7;
-      color: #d1d5db;
-    }
-
-    .btns {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      padding: 12px 20px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.25s;
-    }
-
-    .primary {
-      background: var(--accent);
-      color: #000;
-      box-shadow: 0 10px 25px rgba(250,204,21,0.4);
-    }
-
-    .primary:hover { transform: translateY(-2px); }
-
-    .outline {
-      border: 1px solid rgba(255,255,255,0.15);
-      color: white;
-    }
-
-    .outline:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-      transform: translateY(-2px);
-    }
-
-    .footer {
-      margin-top: 30px;
-      font-size: 12px;
-      color: #6b7280;
-    }
-
-    @media (max-width: 768px) {
-      .btns .btn:nth-child(2) {
-        order: -1;
+      canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
+        height: 100%;
+        z-index: 0;
       }
-      .btns .btn:not(:nth-child(2)) {
-        flex: 1;
+
+      .container {
+        position: relative;
+        z-index: 1;
+        width: min(900px, 92vw);
+        padding: 40px 30px;
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        text-align: center;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(8px);
       }
-    }
-  </style>
-</head>
-<body>
 
-  <canvas id="stars"></canvas>
+      .logo {
+        width: 220px;
+        margin-bottom: 15px;
+        animation: float 4s ease-in-out infinite;
+      }
 
-  <div class="container">
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
 
-    <img class="logo" src="./logo.png" alt="Moloy Logo">
+      h1 {
+        font-size: clamp(30px, 4vw, 42px);
+        font-weight: 800;
+        margin: 10px 0;
+      }
 
-    <h1>Website <span class="highlight">Under Construction</span></h1>
+      .highlight {
+        color: var(--accent);
+      }
 
-    <p class="subtitle">Moloy Krishna Paul — Full Stack Developer</p>
+      .subtitle {
+        color: var(--muted);
+        margin-bottom: 20px;
+      }
 
-    <p class="desc">
-      I'm currently upgrading my portfolio with a better UI, smoother animations, and more powerful projects.
-      Stay tuned — something amazing is coming.
-    </p>
+      .desc {
+        max-width: 620px;
+        margin: 0 auto 28px;
+        line-height: 1.7;
+        color: #d1d5db;
+      }
 
-    <div class="btns">
-      <a class="btn outline" href="https://github.com/iMoloy" target="_blank">GitHub</a>
-      <a class="btn primary" href="https://moloy.vercel.app" target="_blank">Visit This Website For Live Preview</a>
-      <a class="btn outline" href="mailto:moloykrishnapaul@gmail.com">Contact</a>
+      .btns {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        padding: 12px 20px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.25s;
+      }
+
+      .primary {
+        background: var(--accent);
+        color: #000;
+        box-shadow: 0 10px 25px rgba(250, 204, 21, 0.4);
+      }
+
+      .primary:hover {
+        transform: translateY(-2px);
+      }
+
+      .outline {
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        color: white;
+      }
+
+      .outline:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+        transform: translateY(-2px);
+      }
+
+      .footer {
+        margin-top: 30px;
+        font-size: 12px;
+        color: #6b7280;
+      }
+
+      @media (max-width: 768px) {
+        .btns .btn:nth-child(2) {
+          order: -1;
+          width: 100%;
+        }
+        .btns .btn:not(:nth-child(2)) {
+          flex: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="stars"></canvas>
+
+    <div class="container">
+      <img class="logo" src="./logo.png" alt="Moloy Logo" />
+
+      <h1>Website <span class="highlight">Under Construction</span></h1>
+
+      <p class="subtitle">Moloy Krishna Paul — Full Stack Developer</p>
+
+      <p class="desc">
+        I'm currently upgrading my portfolio with a better UI, smoother
+        animations, and more powerful projects. Stay tuned — something amazing
+        is coming.
+      </p>
+
+      <div class="btns">
+        <a class="btn outline" href="https://github.com/iMoloy" target="_blank"
+          >GitHub</a
+        >
+        <a class="btn primary" href="https://moloy.vercel.app" target="_blank"
+          >Explore: Live Demo</a
+        >
+        <a class="btn outline" href="mailto:moloykrishnapaul@gmail.com"
+          >Contact</a
+        >
+      </div>
+
+      <div class="footer">© 2026 Moloy Krishna Paul</div>
     </div>
 
-    <div class="footer">© 2026 Moloy Krishna Paul</div>
+    <script>
+      const canvas = document.getElementById("stars");
+      const ctx = canvas.getContext("2d");
 
-  </div>
+      let stars = [];
+      const STAR_COUNT = 120;
 
-  <script>
-    const canvas = document.getElementById('stars');
-    const ctx = canvas.getContext('2d');
+      function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
 
-    let stars = [];
-    const STAR_COUNT = 120;
+      function createStars() {
+        stars = [];
+        for (let i = 0; i < STAR_COUNT; i++) {
+          stars.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            size: Math.random() * 2,
+            speed: Math.random() * 0.5 + 0.2,
+          });
+        }
+      }
 
-    function resize() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
+      function drawStars() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    function createStars() {
-      stars = [];
-      for (let i = 0; i < STAR_COUNT; i++) {
-        stars.push({
-          x: Math.random() * canvas.width,
-          y: Math.random() * canvas.height,
-          size: Math.random() * 2,
-          speed: Math.random() * 0.5 + 0.2
+        ctx.fillStyle = "white";
+        stars.forEach((star) => {
+          ctx.beginPath();
+          ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+          ctx.fill();
         });
       }
-    }
 
-    function drawStars() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      function updateStars() {
+        stars.forEach((star) => {
+          star.y += star.speed;
+          if (star.y > canvas.height) {
+            star.y = 0;
+            star.x = Math.random() * canvas.width;
+          }
+        });
+      }
 
-      ctx.fillStyle = 'white';
-      stars.forEach(star => {
-        ctx.beginPath();
-        ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
-        ctx.fill();
+      function animate() {
+        drawStars();
+        updateStars();
+        requestAnimationFrame(animate);
+      }
+
+      window.addEventListener("resize", () => {
+        resize();
+        createStars();
       });
-    }
 
-    function updateStars() {
-      stars.forEach(star => {
-        star.y += star.speed;
-        if (star.y > canvas.height) {
-          star.y = 0;
-          star.x = Math.random() * canvas.width;
-        }
-      });
-    }
-
-    function animate() {
-      drawStars();
-      updateStars();
-      requestAnimationFrame(animate);
-    }
-
-    window.addEventListener('resize', () => {
       resize();
       createStars();
-    });
-
-    resize();
-    createStars();
-    animate();
-  </script>
-
-</body>
+      animate();
+    </script>
+  </body>
 </html>
